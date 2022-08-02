@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Wu-Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+  <section id="landing">
+    <nav>
+        <div class="nav__container">
+        <img class="logo" src="imgs/wutang.png" alt="">
+        <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+        </ul>
+    <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menu-Drop -->
+    <div class="menu__backdrop">
+        <button class="btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+            <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+        <div class="header__container">
+            <div class="header__description">
+                <h1>Wu-Library Online Platform</h1>
+                <h2>Wu-Tang is for the <span class="goldyellow">children</h2></span>
+                <a href="#features">
+                <button class="btn">Browse books</button>
+                </a>
+            </div>
+            <figure class="header__img--wrapper">
+                <img src="imgs/undraw reader.svg" alt="">
+            </figure>
+        </div>
+    </header>
+  </section>
+
+
+  <!-- LIBRARY SECTION -->
+  <main>
+    <section id="highlights">
+        <div class="container">
+            <div class="row">
+            <h2 class="section__title">
+                Why choose <span class="goldyellow">Wu-Library</span>
+            </h2>
+            <div class="highlight__wrapper">
+                <div class="highlight">
+                    <div class="highlight__img">
+                        <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="highlight__subtitle">
+                            Easy and Quick
+                        </h3>
+                        <p class="highlight__paragraph">
+                            Get access to books you purchased.
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight__img">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <h3 class="highlight__subtitle">
+                            20,000+ Books
+                        </h3>
+
+                        <p class="highlight__paragraph">
+                            Wu-Library has all your favorite books to read.
+                        </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-money-bill"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Affordable
+                            </h3>
+                            <p class="highlight__paragraph">
+                                Pick your favorite books for as little as $10.
+                            </p>
+                        </section>
+
+
+                        
+            <!-- FEATURES -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <h2 class="section__title">
+                    Featured <span class="goldyellow">Books</span>
+                </h2>
+                <div class="books">
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/tao.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            RZA - The Tao of Wu 
+                        </div>
+
+                        <!-- RZA RATING -->
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$17.00</span> $12.99
+                        </div>
+                    </div>
+
+                    <!-- BOOK 2 -->
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/raekwon.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            Raekwon - From Staircase To Stage
+                        </div>
+
+                        <!-- RAEKWON RATING -->
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            $10.00
+                        </div>
+                        </div>
+                        
+
+                    <!-- BOOK 3 -->
+
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/rza.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            The RZA - The Wu-Tang Manual
+                    </div>
+
+                    <!-- THE RZA RATING -->
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                        <span class="book__price--normal">$40.00</span> $18.39
+                    </div>
+                </div>
+
+                <!-- BOOK 4 -->
+                <div class="book">
+                    <figure class="book__img--wrapper">
+                        <img class="book__img" src="imgs/ugod.jpg" alt="">
+                    </figure>
+                    <div class="book__title">
+                        U-God - RAW: My Journey Into The Wu-Tang
+                </div>
+
+                <!-- U-GOD RATING -->
+                <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="book__price">
+                    <span class="book__price--normal">$14.94</span> $8.94
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- LATEST BOOKS -->
+
+    <section id="latest">
+        <div class="container">
+            <div class="row">
+                <h2 class="section__title">
+                    Latest <span class="goldyellow">Books</span>
+                </h2>
+                <div class="books">
+                    <div class="book">
+
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/sunzu.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            Sun Tzu - The Art of War
+                        </div>
+
+                        <!-- SUN-TZU RATING -->
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$14.99</span> $11.91
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/curtis.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            Curtis "50-Cent" Jackson - Hustle Harder
+                    </div>
+
+                    <!-- 50 CENT RATING -->
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                        <span class="book__price--normal">$17.99</span> $13.96
+                    </div>
+                </div>
+
+
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="imgs/law.jpg" alt="">
+                        </figure>
+                        <div class="book__title">
+                            Robert Greene - The 48 Laws of Power
+                    </div>
+                    <div class="book-ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                        <span class="book__price--normal">$26.00</span> $11.50
+                    </div>
+                </div>
+
+                <div class="book">
+                    <figure class="book__img--wrapper">
+                        <img class="book__img" src="imgs/atomic.jpg" alt="">
+                    </figure>
+                    <div class="book__title">
+                        James Clear - Atomic Habits
+                </div>
+                <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="book__price">
+                    <span class="book__price--normal">$27.00</span> $11.98
+                </div>
+            </div>
+
+
+            <div class="book">
+                <figure class="book__img--wrapper">
+                    <img class="book__img" src="imgs/alchemist.jpg" alt="">
+                </figure>
+                <div class="book__title">
+                    Paulo Coelho - The Alchemist
+            </div>
+            <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="book__price">
+                <span class="book__price--normal">$22.30</span> $18.49
+            </div>
+        </div>
+
+
+        <div class="book">
+            <figure class="book__img--wrapper">
+                <img class="book__img" src="imgs/murphy.jpg" alt="">
+            </figure>
+            <div class="book__title">
+                Joseph Murphy - The Power of Your Subconscious Mind
+        </div>
+        <div class="book__ratings">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="book__price">
+            <span class="book__price--normal">$10.99</span> $5.75
+        </div>
+    </div>
+
+    <div class="book">
+        <figure class="book__img--wrapper">
+            <img class="book__img" src="imgs/rakim.jpg" alt="">
+        </figure>
+        <div class="book__title">
+            Rakim - Sweat The Technique
+    </div>
+    <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="book__price">
+        <span class="book__price--normal">$20.00</span> $18.36
+    </div>
+</div>
+
+<div class="book">
+    <figure class="book__img--wrapper">
+        <img class="book__img" src="imgs/frankl.jpg" alt="">
+    </figure>
+    <div class="book__title">
+        Viktor E. Frankl - Man's Search For Meaning
+</div>
+<div class="book__ratings">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+</div>
+<div class="book__price">
+    <span class="book__price--normal">$20.00</span> $17.45
+</div>
+</div>
+</div>
+</section>
+
+    <section id="more__books">
+        <div class="container">
+            <div class="row row__column">
+                <h2>Explore More <span class="goldyellow">Books</span>
+                </h2>
+                <a href="#features">
+                <button class="btn">Browse books</button>
+            </a>
+            </div>
+        </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+        <div class="row row__column">
+            <a href="#">
+            <figure class="footer__logo">
+                <img src="imgs/wutang.png" class="footer__logo--img" alt="">
+            </figure>
+        </a>
+        <div class="footer__list">
+            <a href="#" class="footer__link">Home</a>
+            <a class="footer__link no-cursor">About</a>
+            <a href="#features" class="footer__link">Books</a>
+            <a class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2022 Wu-Library</div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
+
